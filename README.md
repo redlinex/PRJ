@@ -1,22 +1,15 @@
-Импорт проекта
-===
-```
-idea build.gradle
-```
-Gradle plugin в Intellij Idea должен быть установлен.
-File -> Import -> `build.gradle` 
 
-Запуск
+Запуск из командной строки
 ===
 ```
-gradlew.bat tasks
-gradlew.bat build
-gradlew.bat test
-gradlew.bat run
-```
+перейти в директорию *src\main\java
+javac com/github/redline/Main.java
+java com.github.redline.Main in.txt out.txt
 
-Links
-===
-* https://sdkman.io/sdks#gradle
-* https://guides.gradle.org/creating-new-gradle-builds/
-* https://docs.gradle.org/current/userguide/organizing_gradle_projects.html
+Либо вместо in.txt и out.txt подставить абсольтные 
+пути к вводному и выводному файлам, либо
+переместить директорию *src\main\java в директорию,
+где расположен входной файл и использовать
+относительные пути, вместо абсолютных.
+
+```

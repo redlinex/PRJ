@@ -10,6 +10,7 @@
 *.lock
 *.log*
 *.tmp
+*.gradle
 cache.*
 Desktop.ini
 Thumbs.db
